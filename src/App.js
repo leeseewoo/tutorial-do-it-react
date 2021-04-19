@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">Do It!, React!!!</h1>
-        
+        <img src="http://www.easypub.co.kr/images/logo_footer.png" />
+        <div>Hello!  </div>
       </div>
     )
   }
