@@ -1,16 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import TodaysPlan from './03/TodaysPlan';
+import PropComponent from './03/PropsComponent';
 
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <img src="http://www.easypub.co.kr/images/logo_footer.png" />
-        <div>Hello!  </div>
-      </div>
+      <PropComponent
+        name="Do it React!"
+      />
     )
   }
 }
