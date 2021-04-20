@@ -2,21 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
 
-import TodaysPlan from './03/TodaysPlan';
-import PropComponent from './03/PropsComponent';
-
-import ChildComponent2 from './03/ChildComponent2';
-
-
+import  Counter  from "./03/Counter";
+import NewCounter  from "./03/NewCounter";
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = { count: 11 }
+    this.resetCount = this.resetCount.bind(this)
+  }
+
+  resetCount() {
+    this.setState(( {count}) => ({ count: count + 10}));
+  }
+
+  
   render() {
     return (
-      <ChildComponent2
-        objValue={{ age: 20}}
-        requiredStringValue="문자"
-      />
-    )
+      <div>
+        <div><Counter count={this.state.count} /></div>
+        <div><NewCounter count={this.state.count} /></div>
+        <button onClick={this.resetCount}>{this.state.count + 10}으로 초기화</button>
+      </div>
+         )
   }
 }
 
