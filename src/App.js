@@ -1,12 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
+import './sass/materialize.scss';
 
-import  Counter  from "./03/Counter2";
-import NewCounter  from "./03/NewCounter";
-import ListExample from './03/ListExample'
 
-import ScrollSpy from './03/ScrollSpy'
 
 class App extends Component {
 
@@ -27,7 +24,14 @@ class App extends Component {
   render() {
 
     return (
-      <ScrollSpy />
+      <div>
+        <nav>
+          <div className="nav-wrapper">
+            <div>Do it! Start React</div>
+          </div>
+        </nav>
+        <h1>Material CSS</h1>
+      </div>
     );
   }
 }
