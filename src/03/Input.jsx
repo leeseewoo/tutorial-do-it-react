@@ -67,3 +67,5 @@ Input.defaultProps = {
   autoFocus: false,
   type: 'text',
 };
+
+export default Input;
